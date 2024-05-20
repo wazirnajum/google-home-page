@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif ;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.header {
+    width: 100%;
+    /* background-color: #f8f9fa; */
+    position: relative;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 12px;
+  }
+
+  .navlist {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .navlist-items {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navlist-item {
+    margin-left: 20px;
+  }
+
+  .navlist-anchor_tag {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    transition: color 0.3s ease;
+  }
+
+  .navlist-anchor_tag:hover {
+    color: #007bff;
+  }
+
+  .navlist-anchor_tag img {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    top: 8px;
+    /* z-index: 12; */
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 100px); /* Adjusting for header height */
+    text-align: center;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home img {
+    margin-bottom: 20px;
+  }
+
+  .home form {
+    display: flex;
+    align-items: center;
+  }
+
+  .home form img {
+    margin: 0 10px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .home form input[type="text"] {
+    padding: 10px 50px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    width: 600px;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-size: 16px;
+  }
+  .home form input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on focus */
+  }
+  .input-container {
+    position: relative;
+  }
+
+  .input-container img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .input-container img:last-child {
+    right: 10px;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 23px;
+    gap: 15px;
+    
+  }
+  .btn button{
+    padding: 3px 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    cursor: pointer;
+
+  }
+  .button img {
+    margin: 0 1px;
+    height: 15px;
+    width: 15px;
+    
+  }
+  .button{
+    position: absolute;
+    bottom: 10px;
+    right: 14px;
+    background: none;
+    border: none;
+    outline: none;
+    color: blue;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 24px;
+    width: 200px;
+    padding: 6px 12px;
+    
+  }
