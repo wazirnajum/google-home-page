@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Home page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navlist">
+        <ul class="navlist-items">
+          <li class="navlist-item">
+            <a
+              href="https://mail.google.com/mail/u/0/"
+              target="_blank"
+              class="navlist-anchor_tag"
+              >Gmail</a
+            >
+          </li>
+          <li class="navlist-item">
+            <a
+              href="https://images.google.com/"
+              target="_blank"
+              class="navlist-anchor_tag"
+              >Images</a
+            >
+          </li>
+          <li class="navlist-item">
+            <a href="#" class="navlist-anchor_tag"
+              ><img src="images/dot.jfif" alt=""
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="home" id="home">
+        <img src="images/google logo.svg" alt="Google" />
+        <form action="">
+          <div class="input-container">
+            <img id="search-img" src="images/search image.png" alt="" />
+            <input id="input" type="text" placeholder="Search Google or type a URL" /><img
+              src="images/seaker image.png"
+              alt=""
+            />
+          </div>
+        </form>
+        <div class="btn">
+          <button>Google Search</button><button>I'm Feeling Lucky</button>
+          
+        </div>
+      </div>
+      <button class="button"><img src="images/download.png" alt=""> Customize Chrome</button>
+    </main>
+    <script>
+        const input = document.getElementById("input");
+        const searchImg = document.getElementById("search-img");
+
+        searchImg.addEventListener("click", ()=>{
+        input.innerHTML = "Search Google"
+        })
+    </script>
+  </body>
+
+</html>
